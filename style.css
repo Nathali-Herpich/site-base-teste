@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Righteous&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background-color: white;
+  
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    background-color: #02012B;
+
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 62px;
+
+}
+
+.cabecalho-menu-item {
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
+  font-style: normal;
+    color: aliceblue;
+    font-size: 18px;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid white;
+}
+
+ .conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    }
+
+    .conteudo-principal-escrito {
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+    }
+
+    .conteudo-principal-escrito-titulo {
+        font-family: 'Marcellus', serif;
+         font-weight: 400;
+         font-style: normal;
+         font-size: 64px;
+         text-align: left;
+    }
+
+    .conteudo-principal-escrito-subtitulo {
+        font-family: 'Marcellus', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 5px;
+        text-align: left;
+
+    }
+    .conteudo-principal-escrito-citacao {
+        font-family: 'Marcellus', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px; 
+    }
+    .conteudo-principal-escrito-botao {
+        
+        width: 180px;
+        height: 67px;
+        border: none;
+        box-shadow: 4px 5px rgba(0, 0, 0, 0.25);
+        color: aliceblue;
+        border-radius: 20px;
+        font-family: 'Marcellus', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+    }
+    
+    .conteudo-imagem {
+        width: 100px;
+        height: 95px;
+    }
+    .conteudo-secundario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         font-family: 'Marcellus', serif;
+        font-weight: 400;
+        font-style: normal;
+        gap: 24px;
+        margin-top: 48px;
+    }
+
+    .conteudo-secundario-titulo {
+        border-top: 0.4px solid #02012B;
+        padding-top: 48px;
+        font-size: 24px;
+    }
+
+    .mensagem {
+        padding: 32px;
+        font-family: 'Marcellus', serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 4px;
+    }
+
+    .mensagem-paragrafo {
+         font-family: 'Marcellus', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+  .mensagem-titulo {;
+     font-family: 'Marcellus', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 35px;
+        text-align: center;
+  }
+  
+
+  @media (max-width:785px) {
+    .navigation{
+        padding: 18px 20px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--white);
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .nav-menu.ativo{
+        right: 0;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    /*main*/
+    .home{
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 5rem;
+    }
+    .home .text-h4{
+        font-size: 15px;
+    }
+    .home .text-h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .home p{
+        font-size: 15px;
+    }
+    .home-img{
+        width: 125%;
+    }
+}
